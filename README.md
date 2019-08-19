@@ -26,7 +26,7 @@ Jogo da Vida, simula "celulas" autonomas, seguindo regras simples.<br>
 * Aleatórizar Inicio<br>
 
 # Futuras Features
-* Tela no tkinter para ajustar configuralções como cor, tamanho da janela.
+* Tela no tkinter para ajustar configurações como: Cor, tamanho da janela.
 * Estatisticas de Gerações.
 
 # Imagens
