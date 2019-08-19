@@ -1,8 +1,6 @@
 # Conway-Jogo-da-Vida
 Jogo da Vida, simula "celulas" autonomas, seguindo regras simples.<br>
-![ezgif com-crop](https://user-images.githubusercontent.com/12675265/63234448-a4fd4000-c20b-11e9-9d05-894a89d7f773.gif)
-
-
+![ezgif com-crop](https://user-images.githubusercontent.com/12675265/63235676-d7f60280-c210-11e9-9821-b896aaff9f93.gif)
 
 ## Regras
 > 1. Qualquer célula viva com um ou menos vizinhos vivos morre de solidão.<br>
