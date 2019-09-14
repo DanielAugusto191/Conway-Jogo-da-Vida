@@ -23,7 +23,7 @@ ________________________
 largura = 800
 altura = 600
 #|-Tiles
-cores = {"morto": (255,255,255), "vivo": (200,200,0), "reset": (0,0,0)}
+cores = {"morto": (255,255,255), "vivo": (0,200,0), "reset": (0,0,0)}
 tilesSize = 10 # !!! Deve ser divisor tanto da largura quanto da altura, simultaneamente para que nao sobre espaços. Sugiro 4 ou mais!
 chancesDoModoAleatorio = 40 # porcento
 #|-Game
@@ -94,11 +94,12 @@ def findNeiboors():
             neighboorAlive = 0
 
             for z in neighboor:
-                try: # Caso esteja na borda, os indices sairao da matriz, entao se for indexErro apenas desconsidere, pois nao há vizinho 
+                # Caso esteja na borda, os indices sairao da matriz, entao se for indexErro apenas desconsidere, pois nao há vizinho 
+                if z[0] >= (largura/tilesSize) or z[0] < 0 or z[1] >= (altura/tilesSize) or z[1] < 0:
+                    pass
+                else:
                     if board[z[0]][z[1]].status:
                         neighboorAlive += 1
-                except IndexError:
-                    pass
 
             # Seta quantos vizinhos essa peça possui
             board[x][y].neighboors = neighboorAlive
